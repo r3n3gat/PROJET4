@@ -5,7 +5,8 @@
     }
     
      :root {
-        --filter-variant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        --filter-variant-color: linear-gradient(193.33deg, #ab76ec -11.44%, #FF79DA 123.93%);
+        --filter-variant-color-light: linear-gradient(193.33deg, #9d4efd -11.44%, #fcafe6 123.93%);
     }
     
     .fa-heart-container {
@@ -46,7 +47,7 @@
     .progress {
         height: 100%;
         width: 100%;
-        background-color: #4CAF50;
+        background-color: #99E2D0;
         transition: width 0.3s ease;
         position: absolute;
         border-radius: 0 15px 15px 0;
@@ -71,7 +72,7 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 16px;
-        color: #4CAF50;
+        color: #99E2D0;
     }
     
     .button:hover .progress,
@@ -92,7 +93,7 @@
         border-radius: 15px;
         display: flex;
         justify-content: center;
-        transition: width 0.5s;
+        transition: width 1s;
     }
     
     .fa-solid.fa-circle-check {
@@ -102,8 +103,8 @@
         color: white;
         width: 100%;
         text-align: center;
-        transition: linear 0.5s;
-        transition-delay: 1s;
+        transition: width 2s;
+        transition-delay: 1.3s;
     }
     
     .menu-button:hover {
@@ -128,10 +129,37 @@
     
     .fade-in {
         opacity: 0;
-        animation: fadeIn 0.7s ease-in-out;
+        animation: fadeIn 1.6s ease-in-out;
         animation-fill-mode: forwards;
     }
-    /* ... */
+    
+    .fade-in1 {
+        opacity: 0;
+        animation: fadeIn 0.6s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .fade-in2 {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .fade-in3 {
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .footerlogo .logo {
+        filter: brightness(0) invert(1);
+        width: 139px;
+        height: 27px;
+    }
+    
+    h2 {
+        font-weight: 300;
+    }
     
     @media only screen and (max-width: 767.9px) {
         body {
@@ -305,14 +333,6 @@
             color: #FFFFFF;
             text-decoration: none;
         }
-        footer img {
-            background: var(--filter-variant-color);
-            background-clip: text;
-            -webkit-background-clip: text;
-            fill: #FFFFFF;
-            width: 139px;
-            height: 27px;
-        }
     }
     
     @media only screen and (min-width: 768px) {
@@ -473,7 +493,7 @@
             justify-content: center;
         }
         .button1:hover {
-            background: lighten(var(--filter-variant-color), 10%);
+            background: var(--filter-variant-color-light);
         }
         footer {
             background-color: #353535;
@@ -506,10 +526,5 @@
         footer a {
             color: #FFFFFF;
             text-decoration: none;
-        }
-        footer img {
-            fill: #FFFFFF;
-            width: 139px;
-            height: 27px;
         }
     }

@@ -6,6 +6,43 @@
 
 :root {
     --filter-variant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    --filter-variant-color-light: linear-gradient(193.33deg, #9d4efd -11.44%, #fcafe6 123.93%);
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes hide-loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.loader-container {
+    animation: hide-loader 3s forwards;
 }
 
 .fa-heart-container {
@@ -39,6 +76,50 @@
 
 .fa-heart-container:hover .fa-regular.fa-heart {
     display: none;
+}
+
+
+/* .fa-heart-container {
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    cursor: pointer;
+}
+
+.fa-heart-container:hover .faheartsolid {
+    transition: all 1s ease-in-out 200ms;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    right: 0;
+    top: 0;
+}
+
+.faheartregular {
+    font-size: 1.5em;
+}
+
+.faheartsolid {
+    background: var(--filter-variant-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0s;
+    color: transparent;
+    position: absolute;
+    font-size: 1.5em;
+    right: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+ */
+
+.footerlogo .logo {
+    filter: brightness(0) invert(1);
+    width: 139px;
+    height: 27px;
+}
+
+.button1:hover {
+    cursor: pointer;
+    background: var(--filter-variant-color-light);
 }
 
 @media only screen and (max-width: 767.9px) {
@@ -291,11 +372,6 @@
     footer a {
         color: #FFFFFF;
         text-decoration: none;
-    }
-    footer img {
-        fill: #FFFFFF;
-        width: 139px;
-        height: 27px;
     }
 }
 
@@ -554,15 +630,5 @@
     footer a {
         color: #FFFFFF;
         text-decoration: none;
-    }
-    footer img {
-        fill: #FFFFFF;
-        width: 139px;
-        height: 27px;
-    }
-    .footerlogo .logo {
-        fill: #FFFFFF;
-        width: 139px;
-        height: 27px;
     }
 }
