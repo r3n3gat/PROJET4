@@ -5,9 +5,6 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
     --filter-variant-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
@@ -28,8 +25,12 @@
 .fa-solid.fa-heart {
     z-index: 1;
     display: none;
-    color: #FF79DA;
+    background: var(--filter-variant-color);
+    background-clip: text;
+    -webkit-background-clip: text;
     transition: opacity 0.3s ease;
+    transition: color 3s;
+    color: transparent;
 }
 
 .fa-heart-container:hover .fa-solid.fa-heart {
@@ -363,7 +364,7 @@
         border: none;
     }
     .button1 {
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: var(--filter-variant-color);
         color: white;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
         border-radius: 25px;
@@ -434,11 +435,11 @@
         font-weight: 600;
     }
     .functioning-buttons button .fa-store {
-        color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        color: var(--filter-variant-color);
         ;
     }
     .fa-solid.fa-heart:active {
-        transform: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        transform: var(--filter-variant-color);
         ;
     }
     .functioning a {
@@ -555,6 +556,11 @@
         text-decoration: none;
     }
     footer img {
+        fill: #FFFFFF;
+        width: 139px;
+        height: 27px;
+    }
+    .footerlogo .logo {
         fill: #FFFFFF;
         width: 139px;
         height: 27px;
