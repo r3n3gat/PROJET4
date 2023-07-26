@@ -12,7 +12,7 @@
     .fa-heart-container {
         position: absolute;
         top: 40px;
-        right: 25px;
+        right: 33%;
         font-family: "Font Awesome 5 Free";
         font-weight: 400;
         font-size: 1.5em;
@@ -388,8 +388,7 @@
         }
         .choice {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
             width: 100%;
             padding: 17px;
             padding-bottom: 0;
