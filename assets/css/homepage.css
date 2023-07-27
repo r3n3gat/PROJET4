@@ -83,39 +83,6 @@
     opacity: 0;
 }
 
-
-/* .fa-heart-container {
-    position: relative;
-    font-family: "Font Awesome 5 Free";
-    cursor: pointer;
-}
-
-.fa-heart-container:hover .faheartsolid {
-    transition: all 1s ease-in-out 200ms;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    right: 0;
-    top: 0;
-}
-
-.faheartregular {
-    font-size: 1.5em;
-}
-
-.faheartsolid {
-    background: var(--filter-variant-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition: all 0s;
-    color: transparent;
-    position: absolute;
-    font-size: 1.5em;
-    right: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
- */
-
 .footerlogo .logo {
     filter: brightness(0) invert(1);
     width: 139px;
@@ -638,7 +605,7 @@
     }
 }
 
-@media only screen and (min-width: 1560px) {
+@media only screen and (min-width: 1441px) {
     .functioning {
         margin-top: 20px;
         padding: 3% 20%;
