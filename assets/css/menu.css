@@ -506,8 +506,8 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
-            width: 140%;
-            padding: 30px 25px;
+            width: 143%;
+            padding: 30px 45px;
             gap: 16px;
         }
         .links {
@@ -534,7 +534,7 @@
         }
     }
     
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 1441px) {
         .fa-heart-container {
             right: 33%;
         }
