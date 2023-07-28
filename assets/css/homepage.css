@@ -246,7 +246,6 @@
     .restaurants {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         flex-wrap: wrap;
         align-content: space-around;
         gap: 28px;
@@ -503,7 +502,6 @@
     .restaurants {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         padding: 0 14%;
         background-color: #F6F6F6;
         align-self: stretch;
