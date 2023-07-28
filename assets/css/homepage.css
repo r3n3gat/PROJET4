@@ -173,6 +173,10 @@
         padding: 20px;
         background-color: #FFFFFF;
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
     .functioning h2 {
         font-family: 'Roboto';
@@ -243,6 +247,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: space-around;
         gap: 28px;
         padding: 20px;
         background-color: #F6F6F6;
