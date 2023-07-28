@@ -227,7 +227,7 @@
         .choice h1 {
             color: #101010;
             font-size: 28px;
-            font-family: Shrikhand;
+            font-family: "Shrikhand";
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -403,7 +403,7 @@
         .choice h1 {
             color: #101010;
             font-size: 28px;
-            font-family: Shrikhand;
+            font-family: "Shrikhand";
             font-style: normal;
             font-weight: 400;
             line-height: normal;
