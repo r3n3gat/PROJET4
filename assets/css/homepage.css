@@ -9,40 +9,49 @@
     --filter-variant-color-light: linear-gradient(193.33deg, #9d4efd -11.44%, #fcafe6 123.93%);
 }
 
-.loader-container {
+.loader {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: #f5f5f5;
+    z-index: 1;
+    inset: 0;
+    opacity: .8;
     height: 100%;
-    background-color: #fff;
+    width: 100%;
+    animation: disappear .2s forwards;
+    animation-delay: 3s
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+.loader::after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    border-top: 5px solid red;
+    border-left: 5px solid orange;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid yellow;
+    border-radius: 3rem;
+    animation: spin_loader 3s infinite ease-in-out
 }
 
-.loader {
-    animation: spin 2s linear infinite;
-}
-
-@keyframes hide-loader {
+@keyframes disappear {
     0% {
-        opacity: 1;
+        transform: scale(1)
     }
     100% {
-        opacity: 0;
-        display: none;
+        transform: scale(0)
     }
 }
 
-.loader-container {
-    animation: hide-loader 3s forwards;
+@keyframes spin_loader {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
 }
 
 .fa-heart-container {
@@ -425,6 +434,13 @@
         width: 218px;
         height: 50px;
         text-decoration: none;
+    }
+    .button1 a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .button1:hover {
+        background: var(--filter-variant-color-light);
     }
     .functioning {
         margin-top: 20px;

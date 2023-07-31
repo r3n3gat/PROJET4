@@ -76,19 +76,8 @@
         transform: translateY(-50%);
         font-size: 16px;
         color: #99E2D0;
-        transition: opacity 2s ease;
+        transition: opacity 2s ease-in-out;
         opacity: 0;
-    }
-    
-    .button:hover .progress,
-    .button:active .progress {
-        width: 30%;
-    }
-    
-    .button:hover .select_icon,
-    .button:active .select_icon {
-        opacity: 1;
-        transition-delay: 1s;
     }
     
     .progress_bar {
@@ -100,6 +89,38 @@
         display: flex;
         justify-content: center;
         transition: width 1s;
+    }
+    
+    .progress_bar:hover .select_icon {
+        animation: appear 2s forwards 2s;
+    }
+    
+    .progress_bar:not(:hover) .select_icon {
+        animation: disappear 2s forwards;
+    }
+    
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
     
     .fa-solid.fa-circle-check {
@@ -162,6 +183,12 @@
     
     h2 {
         font-weight: 300;
+    }
+    
+    @media (max-width: 400px) {
+        .menu-button .nameprice .name h3 p .price {
+            overflow: hidden;
+        }
     }
     
     @media only screen and (max-width: 767.9px) {
@@ -437,9 +464,6 @@
             align-items: space-between;
             transition: box-shadow 0.3s ease;
         }
-        button:hover {
-            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-        }
         .nameprice {
             display: flex;
             justify-content: space-between;
@@ -536,6 +560,6 @@
     
     @media only screen and (min-width: 1441px) {
         .fa-heart-container {
-            right: 33%;
+            right: 30%;
         }
     }
