@@ -182,6 +182,21 @@
         font-weight: 300;
     }
     
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: -40px;
+        align-items: center;
+        border-radius: 25px 25px 0 0;
+        background-color: #F6F6F6;
+    }
+    
+    .button1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
     .menu_title {
         white-space: nowrap;
         overflow: hidden;
@@ -234,18 +249,6 @@
         .fa-heart-container {
             right: 8%;
         }
-        .menu {
-            position: absolute;
-            top: 30%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            border-radius: 40px 40px 0 0;
-            background-color: #F6F6F6;
-            padding-top: 20px;
-        }
         .choice {
             display: flex;
             justify-content: center;
@@ -284,6 +287,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
             height: 100%;
             width: 100%;
         }
@@ -534,7 +539,7 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
-            width: 142.8%;
+            width: 100%;
             padding: 40px 40px;
             gap: 16px;
         }
