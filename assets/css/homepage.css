@@ -443,8 +443,6 @@ button {
     .main_functioning {
         display: flex;
         flex-direction: column;
-        gap: 28px;
-        padding: 20px;
         background-color: #F6F6F6;
     }
     .functioning {
@@ -459,6 +457,7 @@ button {
         margin-top: 30px;
         font-weight: 600;
         font-size: 22px;
+        padding-bottom: 30px;
     }
     .step {
         background-color: #F6F6F6;
@@ -525,9 +524,10 @@ button {
     .restaurants {
         display: flex;
         flex-direction: column;
-        padding: 0 14%;
         background-color: #F6F6F6;
         align-self: stretch;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .hebergements-cards {
         display: flex;
