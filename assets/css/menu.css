@@ -92,14 +92,13 @@
     }
     
     .progress_bar:hover .select_icon {
-        animation: appear 2s forwards 2s;
+        animation: appear 1s forwards 1s;
     }
     
     .progress_bar:not(:hover) .select_icon {
-        animation: disappear 2s forwards;
+        animation: disappear 0.5s forwards;
     }
-    
-    @keyframes appear {
+    /*     @keyframes appear {
         0% {
             opacity: 0;
         }
@@ -115,13 +114,11 @@
         0% {
             opacity: 1;
         }
-        50% {
-            opacity: 1;
-        }
         100% {
             opacity: 0;
         }
     }
+ */
     
     .fa-solid.fa-circle-check {
         color: white;
@@ -133,7 +130,7 @@
     }
     
     .menu-button:hover .progress_bar {
-        width: 10%;
+        width: 60px;
     }
     
     .menu-button:hover .fa-solid.fa-circle-check {
@@ -185,10 +182,17 @@
         font-weight: 300;
     }
     
-    @media (max-width: 400px) {
-        .menu-button .nameprice .name h3 p .price {
-            overflow: hidden;
-        }
+    .menu_title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .detail {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 0 10px 0;
     }
     
     @media only screen and (max-width: 767.9px) {
@@ -530,8 +534,8 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: center;
-            width: 143%;
-            padding: 30px 45px;
+            width: 142.8%;
+            padding: 40px 40px;
             gap: 16px;
         }
         .links {
