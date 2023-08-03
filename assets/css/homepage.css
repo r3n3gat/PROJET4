@@ -200,6 +200,9 @@
             margin-top: 30px;
             font-weight: 600;
             font-size: 22px;
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .step {
             background-color: #F6F6F6;
@@ -639,7 +642,14 @@
         }
     }
     
-    @media only screen and (min-width: 1441px) {
+    @media only screen and (min-width: 1024px) {
+        .step {
+            min-width: 313px;
+            align-items: center;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
         /*     .functioning {
         margin-top: 20px;
         padding: 3% 20%;
