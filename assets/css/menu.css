@@ -2,7 +2,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        overflow-x: hidden;
     }
     
      :root {
@@ -12,7 +11,7 @@
     
     .fa-heart-container {
         position: absolute;
-        top: 40px;
+        top: 30px;
         right: 33%;
         font-family: "Font Awesome 5 Free";
         font-weight: 400;
@@ -374,8 +373,8 @@
             margin-top: -10px;
         }
         .fa-heart-container {
-            right: 8%;
-            top: 20px;
+            right: 12%;
+            top: 15px;
         }
         .choice {
             display: flex;
