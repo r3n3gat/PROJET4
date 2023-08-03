@@ -46,17 +46,6 @@
     .fa-heart-container:hover .fa-regular.fa-heart {
         opacity: 0;
     }
-    /*     .progress {
-        height: 100%;
-        width: 100%;
-        background-color: #99E2D0;
-        transition: width 0.3s ease;
-        position: absolute;
-        border-radius: 0 15px 15px 0;
-        display: flex;
-        align-items: center;
-    }
- */
     
     .nameprice {
         position: relative;
@@ -64,9 +53,7 @@
     
     .price {
         transition: transform 0.3s cubic-bezier(0, .17, .52, .53);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        width: 30px;
     }
     
     .nameprice:hover .price {
@@ -113,74 +100,6 @@
         font-family: Roboto;
         display: flex;
     }
-    /*     .select_icon {
-        position: absolute;
-        right: -10px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 16px;
-        color: #99E2D0;
-        transition: opacity 2s ease-in-out;
-        opacity: 0;
-    }
-    
-    .progress_bar {
-        width: 0%;
-        height: 70px;
-        background-color: white;
-        position: relative;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        transition: width 1s;
-    }
-    
-    .progress_bar:hover .select_icon {
-        animation: appear 1s forwards 1s;
-    }
-    
-    .progress_bar:not(:hover) .select_icon {
-        animation: disappear 0.5s forwards;
-    }
- */
-    /*     @keyframes appear {
-        0% {
-            opacity: 0;
-        }
-        50% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes disappear {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
- */
-    /*    
-    .fa-solid.fa-circle-check {
-        color: white;
-        font-size: 1.5rem;
-        color: white;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-    }
-    
-    .menu-button:hover .progress_bar {
-        width: 60px;
-    }
-    
-    .menu-button:hover .fa-solid.fa-circle-check {
-        opacity: 1;
-    } */
     
     @keyframes fadeIn {
         0% {
@@ -244,87 +163,34 @@
     }
     
     .detail {
+        margin: 10px 0 10px 0;
+    }
+    
+    .name,
+    .menu_title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 10px;
+        width: 100%;
+    }
+    
+    .detail {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         margin: 10px 0 10px 0;
-    }
-    
-    @media only screen and (min-width: 320px) {
-        .name {
-            max-width: 170px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding-top: 10px;
-            padding-left: 10px;
-        }
-        .menu_title {
-            max-width: 170px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-    
-    @media only screen and (min-width: 375px) {
-        .name {
-            max-width: 210px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding-top: 10px;
-        }
-        .menu_title {
-            max-width: 170px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-    
-    @media only screen and (min-width: 425px) {
-        .name {
-            max-width: 280px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding-top: 10px;
-        }
-        .menu_title {
-            max-width: 210px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+        width: 100%;
     }
     
     @media only screen and (min-width: 768px) {
         .name {
-            max-width: 240px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             padding-top: 10px;
         }
         .menu_title {
-            max-width: 280px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-    
-    @media only screen and (min-width: 1024px) {
-        .name {
-            max-width: 500px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding-top: 10px;
-        }
-        .menu_title {
-            max-width: 500px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -414,8 +280,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
             height: 100%;
             width: 100%;
         }
@@ -597,7 +461,7 @@
             height: 69px;
             font-family: Roboto;
             display: flex;
-            align-items: space-between;
+            align-items: center;
             transition: box-shadow 0.3s ease;
         }
         .nameprice {
