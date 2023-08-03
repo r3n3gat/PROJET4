@@ -166,6 +166,10 @@
         margin: 10px 0 10px 0;
     }
     
+    .name {
+        padding-left: 10px;
+    }
+    
     .name,
     .menu_title {
         overflow: hidden;
@@ -181,6 +185,16 @@
         text-overflow: ellipsis;
         margin: 10px 0 10px 0;
         width: 100%;
+    }
+    
+    @media only screen and (max-width: 425px) {
+        .name:hover .name:active {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 10px 0 10px 0;
+            width: 200px;
+        }
     }
     
     @media only screen and (min-width: 768px) {
