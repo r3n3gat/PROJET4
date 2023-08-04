@@ -179,6 +179,29 @@
         width: 100%;
     }
     
+    .menu_detail {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .price-container {
+        margin-right: 0;
+        transition: margin-right 0.2s cubic-bezier(0, .17, .52, .53);
+        margin-top: 0.7em;
+        margin-left: 0.8em;
+    }
+    
+    .nameprice:hover .price-container,
+    .nameprice:active .price-container {
+        margin-right: 60px;
+    }
+    
+    .price {
+        transition: transform 0.3s cubic-bezier(0, .17, .52, .53);
+        width: 30px;
+    }
+    
     .detail {
         white-space: nowrap;
         overflow: hidden;
